@@ -133,3 +133,13 @@ export const changeRoleAuth = (roleId, rids) => {//rids  权限ID  字符串  �
     //axios.post(请求地址，对象)  对象 {键：值}
     return axios.post(`roles/${roleId}/rights`, {rids: rids}).then(res => res.data)
 }
+
+// 商品分类列表
+export const getGoodsCateList = (typeNum, pagenum, pagesize) => {
+    return axios.get(`categories`, {params:{type:typeNum, pagenum: pagenum, pagesize: pagesize}}).then(res => res.data)
+}
+
+// 添加分类
+export const addCategories = params => {
+    return axios.post(`categories`, {params}).then(res => res.data)
+}

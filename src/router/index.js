@@ -6,6 +6,7 @@ import Welcome from '@/views/Index/Welcome'
 import User  from '@/views/User/User'
 import Auth  from '@/views/Rbac/Auth'
 import Role  from '@/views/Rbac/Role'
+import Category  from '@/views/Goods/Category'
 // import Auth  from '@/views/Rbac/Auth'
 // import Role  from '@/views/Rbac/Role'
 import Login from '@/views/Login'
@@ -24,7 +25,8 @@ export default new Router({
         {path:'welcome', name:'Welcome', component:Welcome},
         {path:'user', name:'User', component:User},
         {path:'auth', name:'Auth', component:Auth},
-        {path:'role', name:'Role', component:Role}
+        {path:'role', name:'Role', component:Role},
+        {path:'category', name:'Category', component:Category}
         // {path:'auth', name:'Auth', component:Auth},
         // {path:'role', name:'Role', component:Role}
       ]
